@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/select_num"
+        myapp:showAsAction="always"
+        android:title="1"
+        />
+    <item
+        android:id="@+id/multi_delete"
+        myapp:showAsAction="always"
+        android:title="delete"
+        android:icon="@drawable/delete"
+        />
+
+</menu>

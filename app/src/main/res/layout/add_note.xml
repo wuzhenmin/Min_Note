@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addnote_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_note_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/add_note_toolbar"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:padding="5dp"
+            android:hint="input your note title"
+            android:id="@+id/add_note_title"
+            android:textColor="@color/textBlack"
+            android:background="@drawable/text_frame"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/add_img_vedio"
+            android:id="@+id/iv_picNote_add"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+        <VideoView
+            android:src="@drawable/add_img_vedio"
+            android:id="@+id/iv_vedio_add"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+        <EditText
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_frame"
+            android:textColor="@color/textBlack"
+            android:hint="input your note content"
+            android:id="@+id/add_note_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_height="0dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/time_clock"
+            android:layout_width="wrap_content"
+            android:text="first build time: "
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/first_build_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

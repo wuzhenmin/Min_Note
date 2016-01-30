@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Min_note="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item android:id="@+id/add_note_save"
+        android:title="save"
+        android:actionLayout="@color/colorPrimary"
+        android:icon="@drawable/save"
+        Min_note:showAsAction="always"/>
+
+    <item
+        android:id="@+id/add_note_cancel"
+        android:title="cancel"
+        android:actionLayout="@color/colorPrimary"
+        Min_note:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+
+
+</menu>

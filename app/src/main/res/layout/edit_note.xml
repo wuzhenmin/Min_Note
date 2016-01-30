@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_layout"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_note_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit_note_toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:background="@drawable/text_frame"
+            android:id="@+id/edit_note_title"
+            android:layout_width="match_parent"
+            android:textColor="@color/textBlack"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/textBlack"
+            android:id="@+id/edit_note_content"
+            android:background="@drawable/text_frame"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/textBlack"
+            android:layout_width="wrap_content"
+            android:text="edit time: "
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textBlack"
+            android:id="@+id/edit_build_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
